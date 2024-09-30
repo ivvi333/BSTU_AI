@@ -1,0 +1,12 @@
+#ifndef TABLEDELEGATE_H
+#define TABLEDELEGATE_H
+
+#include <QItemDelegate>
+
+class TableDelegate : public QItemDelegate
+{
+public:
+    QWidget *createEditor(QWidget *parent, const QStyleOptionViewItem &option, const QModelIndex &index) const override;
+};
+
+#endif // TABLEDELEGATE_H
